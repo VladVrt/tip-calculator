@@ -4,6 +4,11 @@ body {
   justify-content: center;
 }
 
+li {
+  font-size: 30px;
+  color:rgb(255, 255, 255);
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
@@ -276,7 +281,9 @@ h1 {
   .menu-icon:not(:checked) + label {
     right: 55px;
   }
-  
+  .logo {
+    left: 30px;
+  }
   .nav {
     right: 30px;
   }
