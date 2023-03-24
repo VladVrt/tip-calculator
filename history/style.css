@@ -1,17 +1,4 @@
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-li {
-  font-size: 30px;
-  color:rgb(255, 255, 255);
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-
-body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 15px;
@@ -26,11 +13,15 @@ body {
   height: 100vh;
   width: 100%;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
 .section-center {
   position: absolute;
   top: 50%;
   left: 0;
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -38,12 +29,12 @@ body {
   text-align: center;
   transform: translateY(-50%);
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 7vw;
   line-height: 1;
-  margin-bottom: 865px;
   color: #ffeba7;
   text-align: center;
   -webkit-text-stroke: 2px #ffeba7;
@@ -51,6 +42,19 @@ h1 {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   color: transparent;
+}
+
+li {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1vw;
+}
+
+p {
+  font-size: 30px;
 }
 
 [type="checkbox"]:checked,
@@ -281,16 +285,13 @@ h1 {
   .menu-icon:not(:checked) + label {
     right: 55px;
   }
-  .logo {
-    left: 30px;
-  }
+
   .nav {
     right: 30px;
   }
   h1 {
     font-size: 9vw;
-    margin-bottom: 750px;
-    margin-right: 90px;
+    margin: 60px 100px 0 0;
     -webkit-text-stroke: 2px transparent;
     text-stroke: 2px transparent;
     -webkit-text-fill-color: #ffeba7;
@@ -299,6 +300,9 @@ h1 {
   }
   .nav ul li a {
     font-size: 4vh;
+  }
+  li{
+    gap:3vw;
   }
 }
 
@@ -313,8 +317,7 @@ h1 {
   }
   h1 {
     font-size: 9vw;
-    margin-bottom: 550px;
-    margin-right: 90px;
+    margin:60px 100px 0 0;
     -webkit-text-stroke: 2px transparent;
     text-stroke: 2px transparent;
     -webkit-text-fill-color: #ffeba7;
@@ -324,65 +327,22 @@ h1 {
   .nav ul li a {
     font-size: 4vh;
   }
+
+  li{
+    gap:3vw;
+  }
 }
 
-.container {
-  width: 350px;
-  height: 420px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  border-radius: 20px;
-  background-color: #001f4f;
-}
 .wrapper {
   padding: 20px;
 }
 
-input,
-select {
-  width: 80%;
-  border: none;
-  border-bottom: 1px solid #0074d9;
-  padding: 10px;
-}
-
-input:focus,
-select:focus {
-  border: 1px solid #0074d9;
-  outline: none;
-}
-
-select {
-  width: 88% !important;
-}
-
 button {
-  margin: 20px auto;
-  width: 150px;
-  height: 50px;
-  background-color: #39cccc;
+  width: 90px;
+  height: 35px;
+  background-color:rgb(199, 54, 54);
   color: #fff;
   font-size: 16px;
   border: none;
   border-radius: 5px;
-}
-
-.save{
-  margin:10px auto;
-}
-
-#erase {
-  background-color:red;
-  width: 75px;
-}
-
-.tip {
-  text-align: center;
-  font-size: 18px;
-  display: none;
-  background-color: rgba(55, 160, 41, 0.3);
-  border-radius:20px;
 }

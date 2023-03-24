@@ -30,7 +30,8 @@ function calculateTip() {
     total = total.toFixed(2);
     totalAmount = total;
   
-    document.querySelector('.tip').style.display = 'block';
+    document.getElementById('save').innerText="Save"
+    document.querySelector('.tip').style.display = 'flex';
     document.querySelector('#total').innerHTML = total;
 }
 

@@ -8,59 +8,53 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-      <input
-        class="menu-icon"
-        type="checkbox"
-        id="menu-icon"
-        name="menu-icon"
-      />
-      <label for="menu-icon"></label>
-      <nav class="nav">
-        <ul class="pt-5">
-          <li><a href="./index.html">Tip Calculator</a></li>
-          <li><a href="./history/index.html">History</a></li>
-          <li>
-            <a href="https://vladvrt.github.io/portofolio/">My Portofolio</a>
-          </li>
-        </ul>
-      </nav>
+    <input class="menu-icon" type="checkbox" id="menu-icon" name="menu-icon" />
+    <label for="menu-icon"></label>
+    <nav class="nav">
+      <ul class="pt-5">
+        <li><a href="./index.html">Tip Calculator</a></li>
+        <li><a href="./history/index.html">History</a></li>
+        <li>
+          <a href="https://vladvrt.github.io/portofolio/">My Portofolio</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="section-center">
-        <h1 class="mb-0">Tip Calculator</h1>
-        <div class="container">
-          <div class="wrapper">
-            <p>Bill Amount</p>
-            <input type="text" id="amount" placeholder="Amount to be paid" /> 
-            <p>How was the service ?</p>
-            <select id="services">
-              <option selected disabled hidden>Select</option>
-              <option value="0.25">25% - Top</option>
-              <option value="0.20">20% - Excellent</option>
-              <option value="0.15">15% - Good</option>
-              <option value="0.10">10% - Bad</option>
-              <option value="0.05">5% - Worst</option>
-            </select>
-            <p>Total number of persons</p>
-            <input
-              type="text"
-              id="persons"
-              placeholder="Number of people sharing the bill"
-            />
-            <div>
-                <button id="calculate">Calculate</button>
-                <button id="erase">Erase</button>
-            </div>
-            
-          </div>
-
-          <div class="tip">
-            <p>Tip Amount</p>
-            <span id="total">0</span>
-            <span id="each">each</span>
-            <button id="save">Save</button>
+    <div class="section-center">
+      <h1 class="mb-0">Tip Calculator</h1>
+      <div class="container">
+        <div class="wrapper">
+          <p>Bill Amount</p>
+          <input type="text" id="amount" placeholder="Amount to be paid" />
+          <p>How was the service ?</p>
+          <select id="services">
+            <option selected disabled hidden>Select</option>
+            <option value="0.25">25% - Top</option>
+            <option value="0.20">20% - Excellent</option>
+            <option value="0.15">15% - Good</option>
+            <option value="0.10">10% - Bad</option>
+            <option value="0.05">5% - Worst</option>
+          </select>
+          <p>Total number of persons</p>
+          <input
+            type="text"
+            id="persons"
+            placeholder="Number of people sharing the bill"
+          />
+          <div>
+            <button id="calculate">Calculate</button>
+            <button id="erase">Erase</button>
           </div>
         </div>
+
+        <div class="tip">
+          <p>Tip Amount</p>
+          <span id="total">0</span>
+          <span id="each">each</span>
+          <button id="save">Save</button>
+        </div>
       </div>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
